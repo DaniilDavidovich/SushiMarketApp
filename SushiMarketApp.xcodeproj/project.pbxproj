@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A57F485F2A13FA2500D65A24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F485E2A13FA2500D65A24 /* AppDelegate.swift */; };
 		A57F48612A13FA2500D65A24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F48602A13FA2500D65A24 /* SceneDelegate.swift */; };
-		A57F48632A13FA2500D65A24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F48622A13FA2500D65A24 /* ViewController.swift */; };
+		A57F48632A13FA2500D65A24 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F48622A13FA2500D65A24 /* MenuViewController.swift */; };
 		A57F48692A13FA2500D65A24 /* SushiMarketApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A57F48672A13FA2500D65A24 /* SushiMarketApp.xcdatamodeld */; };
 		A57F486B2A13FA2600D65A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57F486A2A13FA2600D65A24 /* Assets.xcassets */; };
 		A57F486E2A13FA2600D65A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57F486C2A13FA2600D65A24 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		A57F485B2A13FA2500D65A24 /* SushiMarketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiMarketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57F485E2A13FA2500D65A24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A57F48602A13FA2500D65A24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A57F48622A13FA2500D65A24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A57F48622A13FA2500D65A24 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A57F48682A13FA2500D65A24 /* SushiMarketApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SushiMarketApp.xcdatamodel; sourceTree = "<group>"; };
 		A57F486A2A13FA2600D65A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57F486D2A13FA2600D65A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		A57F48752A13FB1300D65A24 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A57F48622A13FA2500D65A24 /* ViewController.swift */,
+				A57F48782A1404A000D65A24 /* MenuModule */,
 				A57F48772A13FB2100D65A24 /* App */,
 			);
 			path = Source;
@@ -89,6 +89,38 @@
 				A57F48602A13FA2500D65A24 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		A57F48782A1404A000D65A24 /* MenuModule */ = {
+			isa = PBXGroup;
+			children = (
+				A57F487B2A14051E00D65A24 /* MenuModel */,
+				A57F487A2A14050C00D65A24 /* MenuViewModel */,
+				A57F48792A1404F000D65A24 /* MenuControolers */,
+			);
+			path = MenuModule;
+			sourceTree = "<group>";
+		};
+		A57F48792A1404F000D65A24 /* MenuControolers */ = {
+			isa = PBXGroup;
+			children = (
+				A57F48622A13FA2500D65A24 /* MenuViewController.swift */,
+			);
+			path = MenuControolers;
+			sourceTree = "<group>";
+		};
+		A57F487A2A14050C00D65A24 /* MenuViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MenuViewModel;
+			sourceTree = "<group>";
+		};
+		A57F487B2A14051E00D65A24 /* MenuModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MenuModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A57F48692A13FA2500D65A24 /* SushiMarketApp.xcdatamodeld in Sources */,
-				A57F48632A13FA2500D65A24 /* ViewController.swift in Sources */,
+				A57F48632A13FA2500D65A24 /* MenuViewController.swift in Sources */,
 				A57F485F2A13FA2500D65A24 /* AppDelegate.swift in Sources */,
 				A57F48612A13FA2500D65A24 /* SceneDelegate.swift in Sources */,
 			);
