@@ -10,7 +10,6 @@
 		A57F485F2A13FA2500D65A24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F485E2A13FA2500D65A24 /* AppDelegate.swift */; };
 		A57F48612A13FA2500D65A24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F48602A13FA2500D65A24 /* SceneDelegate.swift */; };
 		A57F48632A13FA2500D65A24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F48622A13FA2500D65A24 /* ViewController.swift */; };
-		A57F48662A13FA2500D65A24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57F48642A13FA2500D65A24 /* Main.storyboard */; };
 		A57F48692A13FA2500D65A24 /* SushiMarketApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A57F48672A13FA2500D65A24 /* SushiMarketApp.xcdatamodeld */; };
 		A57F486B2A13FA2600D65A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57F486A2A13FA2600D65A24 /* Assets.xcassets */; };
 		A57F486E2A13FA2600D65A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57F486C2A13FA2600D65A24 /* LaunchScreen.storyboard */; };
@@ -21,7 +20,6 @@
 		A57F485E2A13FA2500D65A24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A57F48602A13FA2500D65A24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A57F48622A13FA2500D65A24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A57F48652A13FA2500D65A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A57F48682A13FA2500D65A24 /* SushiMarketApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SushiMarketApp.xcdatamodel; sourceTree = "<group>"; };
 		A57F486A2A13FA2600D65A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57F486D2A13FA2600D65A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,16 +56,39 @@
 		A57F485D2A13FA2500D65A24 /* SushiMarketApp */ = {
 			isa = PBXGroup;
 			children = (
-				A57F485E2A13FA2500D65A24 /* AppDelegate.swift */,
-				A57F48602A13FA2500D65A24 /* SceneDelegate.swift */,
+				A57F48752A13FB1300D65A24 /* Source */,
+				A57F48762A13FB1A00D65A24 /* Resource */,
+			);
+			path = SushiMarketApp;
+			sourceTree = "<group>";
+		};
+		A57F48752A13FB1300D65A24 /* Source */ = {
+			isa = PBXGroup;
+			children = (
 				A57F48622A13FA2500D65A24 /* ViewController.swift */,
-				A57F48642A13FA2500D65A24 /* Main.storyboard */,
+				A57F48772A13FB2100D65A24 /* App */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A57F48762A13FB1A00D65A24 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				A57F486A2A13FA2600D65A24 /* Assets.xcassets */,
 				A57F486C2A13FA2600D65A24 /* LaunchScreen.storyboard */,
 				A57F486F2A13FA2600D65A24 /* Info.plist */,
 				A57F48672A13FA2500D65A24 /* SushiMarketApp.xcdatamodeld */,
 			);
-			path = SushiMarketApp;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A57F48772A13FB2100D65A24 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A57F485E2A13FA2500D65A24 /* AppDelegate.swift */,
+				A57F48602A13FA2500D65A24 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +151,6 @@
 			files = (
 				A57F486E2A13FA2600D65A24 /* LaunchScreen.storyboard in Resources */,
 				A57F486B2A13FA2600D65A24 /* Assets.xcassets in Resources */,
-				A57F48662A13FA2500D65A24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,14 +171,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A57F48642A13FA2500D65A24 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A57F48652A13FA2500D65A24 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A57F486C2A13FA2600D65A24 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,12 +305,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8PHY3R68LB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SushiMarketApp/Info.plist;
+				INFOPLIST_FILE = SushiMarketApp/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,12 +333,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8PHY3R68LB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SushiMarketApp/Info.plist;
+				INFOPLIST_FILE = SushiMarketApp/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
